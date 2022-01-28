@@ -1,0 +1,66 @@
+*{
+  border:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container{
+  width:500px;
+  height:500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  background-color: black;
+}
+
+.ball{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  animation-name: roller;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transition: all ease-in-out;
+}
+.ball1{
+  animation-delay: 1s;
+  background-color: rgb(24, 199, 123);
+}
+.ball2{
+  animation-delay: 1.2s;
+  background-color: rgb(24, 94, 199);
+
+}
+.ball3{
+  animation-delay:1.4s;
+  background-color: rgb(199, 199, 24);
+
+}
+.ball4{
+  animation-delay: 1.6;
+  background-color: rgb(199, 100, 24);
+
+}
+.ball5{
+  animation-delay: 1.8s;
+  background-color: rgb(91, 24, 199);
+}
+
+@keyframes roller {
+  0% {
+      transform: translate(0, 0);
+  }
+  50% {
+      transform: translate(0, 30px);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+  
+
+  
+}
+
+
